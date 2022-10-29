@@ -1,0 +1,23 @@
+.to__top {
+    display: flex;
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    transition-duration: .5s;
+}
+
+.to__top:hover {
+    background-color: white;
+    color: #011F44;
+}
