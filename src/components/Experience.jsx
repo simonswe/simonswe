@@ -4,7 +4,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { Card, CardMedia, CardContent } from '@mui/material';
 import { Parallax } from 'react-parallax';
 
-import SpaceImage from '../assets/images/space.jpg';
+import NebulaImage from '../assets/images/nebula.jpg';
 import GSoft from '../assets/images/gsoft.png';
 import AuraData from '../assets/images/auradata.png';
 import PHSA from '../assets/images/phsa.png';
@@ -22,7 +22,7 @@ const Experience = () => {
 
     return (
         <div name='experience'>
-            <Parallax className='space' bgImage={SpaceImage} strength={500}>
+            <Parallax className='space' bgImage={NebulaImage} strength={500}>
                 <div className='content'>
                     <h1>Experience</h1>
                     <Card variant='outlined' className='button-group'>

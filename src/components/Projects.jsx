@@ -4,7 +4,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { Card, CardMedia, CardContent } from '@mui/material';
 import { Parallax } from 'react-parallax';
 
-import EarthImage from '../assets/images/earth.jpg';
+import DarkerNebulaImage from '../assets/images/nebula2.jpg';
 
 import './Projects.scss';
 
@@ -19,7 +19,7 @@ const Projects = () => {
 
     return (
         <div name='projects'>
-            <Parallax className='space' bgImage={EarthImage} strength={500}>
+            <Parallax className='space' bgImage={DarkerNebulaImage} strength={500}>
                 <div className='content'>
                     <h1>Projects</h1>
                     <Card variant='outlined' className='button-group'>
