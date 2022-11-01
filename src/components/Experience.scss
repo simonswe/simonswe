@@ -1,0 +1,48 @@
+.space {
+    position: relative;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.content h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.button-group {
+    margin: 3rem;
+}
+
+.card {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-media {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    padding: 1rem;
+}
+
+.job-title {
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 1rem;
+}

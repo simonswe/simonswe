@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import WebFont from 'webfontloader';
+import React from 'react';
 
 import Resume from '../assets/files/SimonHuang_Resume.pdf';
 import ProfilePic from '../assets/images/pfp.jpg';
@@ -7,14 +6,6 @@ import ProfilePic from '../assets/images/pfp.jpg';
 import './About.scss';
 
 const About = () => {
-    useEffect(() => {
-        WebFont.load({
-          google: {
-            families: ['Source Sans Pro']
-          }
-        });
-       }, []);
-
     return (
         <div className="about">
             <svg name='about' className="svg_curve_top" xmlns="http://www.w3.org/2000/svg" fill="#011F44" viewBox="0 0 100 100" preserveAspectRatio="none" >
