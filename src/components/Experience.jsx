@@ -42,7 +42,7 @@ const Experience = () => {
                         experience === 'gsoft'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia className='card-media' component="img" image={GSoft} />
+                            <CardMedia className='card-media' component="img" image={GSoft} alt="GSoft"/>
                             <CardContent className='job-title'>
                                 Full-Stack Engineer @ GSoft
                             </CardContent>
@@ -55,7 +55,7 @@ const Experience = () => {
                         experience === 'auradata'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia className='card-media' component="img" image={AuraData} />
+                            <CardMedia className='card-media' component="img" image={AuraData} alt="AuraData"/>
                             <CardContent className='job-title'>
                                 C# Developer @ AuraData
                             </CardContent>
@@ -74,7 +74,7 @@ const Experience = () => {
                         experience === 'phsa'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia className='card-media' component="img" image={PHSA} />
+                            <CardMedia className='card-media' component="img" image={PHSA} alt="PHSA"/>
                             <CardContent className='job-title'>
                                 Full-Stack Developer @ PHSA
                             </CardContent>

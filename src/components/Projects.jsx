@@ -44,7 +44,7 @@ const Projects = () => {
                         project === 'xroyalbot'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia className='card-media' component="img" image={xRPBotImage} />
+                            <CardMedia className='card-media' component="img" image={xRPBotImage} alt="xRPBot"/>
                             <CardContent className='project-name'>
                                 xRoyalBot
                             </CardContent>
@@ -60,7 +60,7 @@ const Projects = () => {
                         project === 'simonswe'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia className='card-media' component="img" image={SimonSWEImage} />
+                            <CardMedia className='card-media' component="img" image={SimonSWEImage} alt="SimonSWE"/>
                             <CardContent className='project-name'>
                                 SimonSWE
                             </CardContent>
@@ -76,7 +76,7 @@ const Projects = () => {
                         project === 'ii'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia className='card-media' component="img" image={ImpossibleInvadersImage} />
+                            <CardMedia className='card-media' component="img" image={ImpossibleInvadersImage} alt="ImpossibleInvaders"/>
                             <CardContent className='project-name'>
                                 Impossible Invaders
                             </CardContent>
@@ -94,7 +94,7 @@ const Projects = () => {
                         project === 'monke'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia className='card-media' component="img" image={MonkeyImage} />
+                            <CardMedia className='card-media' component="img" image={MonkeyImage} alt="Monkey"/>
                             <CardContent className='project-name'>
                                 MONKE Assistant
                             </CardContent>
