@@ -4,12 +4,16 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { Card, CardMedia, CardContent } from '@mui/material';
 import { Parallax } from 'react-parallax';
 
-import DarkerNebulaImage from '../assets/images/nebula2.jpg';
+import DarkerNebulaImage from '../assets/images/earth.jpg';
+import xRPBotImage from '../assets/images/xrp-removebg.png';
+import SimonSWEImage from '../assets/images/robot.png';
+import ImpossibleInvadersImage from '../assets/images/invader.png';
+import MonkeyImage from '../assets/images/monkey.png';
 
 import './Projects.scss';
 
 const Projects = () => {
-    const [project, setProject] = React.useState('1');
+    const [project, setProject] = React.useState('xroyalbot');
 
     const handleChange = (event, newProject) => {
         if (newProject !== null) {
@@ -19,8 +23,8 @@ const Projects = () => {
 
     return (
         <div name='projects'>
-            <Parallax className='space' bgImage={DarkerNebulaImage} strength={500}>
-                <div className='content'>
+            <Parallax className='projects__background' bgImage={DarkerNebulaImage} strength={500}>
+                <div className='projects__container'>
                     <h1>Projects</h1>
                     <Card variant='outlined' className='button-group'>
                         <ToggleButtonGroup
@@ -30,72 +34,79 @@ const Projects = () => {
                             onChange={handleChange}
                             aria-label="Platform"
                             >
-                                <ToggleButton value="1">Project 1</ToggleButton>
-                                <ToggleButton value="2">Project 2</ToggleButton>
-                                <ToggleButton value="3">Project 3</ToggleButton>
+                                <ToggleButton value="xroyalbot">xRoyalBot</ToggleButton>
+                                <ToggleButton value="simonswe">SimonSWE</ToggleButton>
+                                <ToggleButton value="ii">Impossible Invaders</ToggleButton>
+                                <ToggleButton value="monke">Monke Assistant</ToggleButton>
                         </ToggleButtonGroup>
                     </Card>
                     {
-                        project === '1'
+                        project === 'xroyalbot'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia
-                            style={{
-                                maxWidth: "25vw",
-                                padding: "3em"
-                            }}
-                            component="img"
-                            image=''
-                            alt=""
-                            />
-                            <CardContent className='job-title'>
-                                
+                            <CardMedia className='card-media' component="img" image={xRPBotImage} />
+                            <CardContent className='project-name'>
+                                xRoyalBot
                             </CardContent>
-                            <CardContent className='description'>
-                                
+                            <CardContent className='project-skills'>
+                                JavaScript | REST APIs | Heroku
+                            </CardContent>
+                            <CardContent className='project-description'>
+                                ► Programmed JS discord bot that listens to custom commands to perform different tasks such as fetching Ethereum price from an API.
                             </CardContent>
                         </Card>
                     }
                     {
-                        project === '2'
+                        project === 'simonswe'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia
-                            style={{
-                                maxWidth: "25vw",
-                                maxHeight: "10vh",
-                                padding: "3em"
-                            }}
-                            component="img"
-                            image=''
-                            alt=""
-                            />
-                            <CardContent className='job-title'>
-                                
+                            <CardMedia className='card-media' component="img" image={SimonSWEImage} />
+                            <CardContent className='project-name'>
+                                SimonSWE
                             </CardContent>
-                            <CardContent className='description'>
-                                
+                            <CardContent className='project-skills'>
+                                React | JavaScript | HTML/CSS
+                            </CardContent>
+                            <CardContent className='project-description'>
+                                ► Website using React and Material UI
                             </CardContent>
                         </Card>
                     }
                     {
-                        project === '3'
+                        project === 'ii'
                         &&
                         <Card variant='outlined' className='card'>
-                            <CardMedia
-                            style={{
-                                maxWidth: "25vw",
-                                padding: "3em"
-                            }}
-                            component="img"
-                            image=''
-                            alt=""
-                            />
-                            <CardContent className='job-title'>
-                                
+                            <CardMedia className='card-media' component="img" image={ImpossibleInvadersImage} />
+                            <CardContent className='project-name'>
+                                Impossible Invaders
                             </CardContent>
-                            <CardContent className='description'>
-                                 
+                            <CardContent className='project-skills'>
+                                PyGame | Python | OOP
+                            </CardContent>
+                            <CardContent className='project-description'>
+                                ► Used object-oriented programming in Python to create a game inspired by Space Invaders
+                                <br />
+                                ► Implemented collision detection and increasing game difficulty with Pygame
+                            </CardContent>
+                        </Card>
+                    }
+                    {
+                        project === 'monke'
+                        &&
+                        <Card variant='outlined' className='card'>
+                            <CardMedia className='card-media' component="img" image={MonkeyImage} />
+                            <CardContent className='project-name'>
+                                MONKE Assistant
+                            </CardContent>
+                            <CardContent className='project-skills'>
+                                Python | gTTS | Speech Recognition
+                            </CardContent>
+                            <CardContent className='project-description'>
+                                ► Integrated PyPI libraries in Python to program a bot that assists with simple tasks, such as capturing images, applying a filter to the images, then posting them onto Discord or Twitter via a bot using their APIs.
+                            <br />
+                                ► Implemented unique voice commands with a Speech Recognition API that trigger various bot functions
+                            <br />
+                                ► Established randomized dialogue with gTTS’s API to converse with the user
                             </CardContent>
                         </Card>
                     }

@@ -7,8 +7,8 @@ import './Satellite.scss';
 
 const Satellite = () => {
     return (
-        <Parallax className='satellite' bgImage={SatelliteImage} strength={500}>
-            <div className='home__container'>
+        <Parallax className='satellite__background' bgImage={SatelliteImage} strength={500}>
+            <div className='satellite__container'>
                 <div className='carousel__content'>
                     <div className="carousel__content__container">
                         <p className="carousel__content__container__text">I'm a</p>
@@ -23,9 +23,7 @@ const Satellite = () => {
                 <div className='typewriter__content'>
                     <span className='img-txt'>
                         <TypeWriter
-                            options={{
-                                loop: true,
-                            }}
+                            options={{loop: true}}
                             onInit={(typewriter) => {
                                 typewriter.changeDelay(25)
                                 .changeDeleteSpeed(2)
@@ -38,7 +36,6 @@ const Satellite = () => {
                                 .deleteAll()
                             }}
                         />
-                        
                     </span>
                 </div>
             </div>

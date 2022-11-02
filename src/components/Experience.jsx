@@ -4,7 +4,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { Card, CardMedia, CardContent } from '@mui/material';
 import { Parallax } from 'react-parallax';
 
-import NebulaImage from '../assets/images/nebula.jpg';
+import NebulaImage from '../assets/images/planets.jpg';
 import GSoft from '../assets/images/gsoft.png';
 import AuraData from '../assets/images/auradata.png';
 import PHSA from '../assets/images/phsa.png';
@@ -22,8 +22,8 @@ const Experience = () => {
 
     return (
         <div name='experience'>
-            <Parallax className='space' bgImage={NebulaImage} strength={500}>
-                <div className='content'>
+            <Parallax className='experience__background' bgImage={NebulaImage} strength={500}>
+                <div className='experience__container'>
                     <h1>Experience</h1>
                     <Card variant='outlined' className='button-group'>
                         <ToggleButtonGroup
@@ -46,7 +46,7 @@ const Experience = () => {
                             <CardContent className='job-title'>
                                 Full-Stack Engineer @ GSoft
                             </CardContent>
-                            <CardContent className='description'>
+                            <CardContent className='job-description'>
                                 ► Streamlined processes
                             </CardContent>
                         </Card>
@@ -59,7 +59,7 @@ const Experience = () => {
                             <CardContent className='job-title'>
                                 C# Developer @ AuraData
                             </CardContent>
-                            <CardContent className='description'>
+                            <CardContent className='job-description'>
                                 ► Redesigned a web application used internationally for education verification services utilizing Angular (TypeScript), Bootstrap, HTML/CSS for the front-end and .NET Core along with ABP as a framework for the backend
                                 <br />
                                 ► Built RESTful APIs using Entity Framework (C#), Microsoft SQL Server, and Azure to process over 10k subject verifications per month as well as create per-organization subscriber accounts
@@ -78,7 +78,7 @@ const Experience = () => {
                             <CardContent className='job-title'>
                                 Full-Stack Developer @ PHSA
                             </CardContent>
-                            <CardContent className='description'>
+                            <CardContent className='job-description'>
                                 ► Developed a .NET Core web application that supports over 500 capital projects and applications, 3000 servers, and other vital systems that are used to operate the healthcare system for the province of BC
                                 <br />
                                 ► Implemented a role-based access security layer to prevent users with insufficient permissions from editing and/or viewing sensitive health care information

@@ -1,9 +1,9 @@
-.satellite {
+.satellite__background {
     position: relative;
     height: 100vh;
 }
 
-.home__container {
+.satellite__container {
     display: flex;
     justify-content: center;
 }
@@ -18,7 +18,7 @@
     
     font-size: 35px;
     line-height: 40px;
-    color: #011F44;
+    color: black;
     
     &__container {
         font-weight: 600;
@@ -41,7 +41,7 @@
             position: absolute;
             top: 0;
             
-            color: white;
+            color: #011F44;
             font-size: 42px;
             line-height: 40px;
             
@@ -148,7 +148,7 @@
 
 .typewriter__content span.img-txt {
     text-transform: uppercase;
-    color: #011F44;
+    color: black;
     padding: 1rem;
     font-size: 4rem;
     font-weight: bold;
