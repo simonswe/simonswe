@@ -3,6 +3,7 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { Card, CardMedia, CardContent } from '@mui/material';
 import { Parallax } from 'react-parallax';
+import { AiFillGithub } from 'react-icons/ai';
 
 import DarkerNebulaImage from '../assets/images/earth.jpg';
 import xRPBotImage from '../assets/images/xrp-removebg.png';
@@ -44,6 +45,9 @@ const Projects = () => {
                         project === 'xroyalbot'
                         &&
                         <Card variant='outlined' className='card'>
+                            <a className='card-link-button' href='https://github.com/xroyalphantom/xRoyalBot' target='_blank' rel='noreferrer'>
+                                <AiFillGithub size={30}/>
+                            </a>
                             <CardMedia className='card-media' component="img" image={xRPBotImage} alt="xRPBot"/>
                             <CardContent className='project-name'>
                                 xRoyalBot
@@ -60,6 +64,9 @@ const Projects = () => {
                         project === 'simonswe'
                         &&
                         <Card variant='outlined' className='card'>
+                            <a className='card-link-button' href='https://github.com/xroyalphantom/SimonSWE' target='_blank' rel='noreferrer'>
+                                <AiFillGithub size={30}/>
+                            </a>
                             <CardMedia className='card-media' component="img" image={SimonSWEImage} alt="SimonSWE"/>
                             <CardContent className='project-name'>
                                 SimonSWE
@@ -76,6 +83,9 @@ const Projects = () => {
                         project === 'ii'
                         &&
                         <Card variant='outlined' className='card'>
+                            <a className='card-link-button' href='https://github.com/xroyalphantom/Impossible-Invaders' target='_blank' rel='noreferrer'>
+                                <AiFillGithub size={30}/>
+                            </a>
                             <CardMedia className='card-media' component="img" image={ImpossibleInvadersImage} alt="ImpossibleInvaders"/>
                             <CardContent className='project-name'>
                                 Impossible Invaders
@@ -94,6 +104,9 @@ const Projects = () => {
                         project === 'monke'
                         &&
                         <Card variant='outlined' className='card'>
+                            <a className='card-link-button' href='https://github.com/charliecao02/Monkey-Assistant' target='_blank' rel='noreferrer'>
+                                <AiFillGithub size={30}/>
+                            </a>
                             <CardMedia className='card-media' component="img" image={MonkeyImage} alt="Monkey"/>
                             <CardContent className='project-name'>
                                 MONKE Assistant
