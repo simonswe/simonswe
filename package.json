@@ -1,7 +1,7 @@
 {
-  "name": "SimonSWE",
+  "name": "simonswe",
   "version": "0.1.0",
-  "homepage": "https://xroyalphantom.github.io/SimonSWE",
+  "homepage": "https://xroyalphantom.github.io/simonswe",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
