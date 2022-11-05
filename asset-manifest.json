@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/SimonSWE/static/css/main.ce7d8819.css",
-    "main.js": "/SimonSWE/static/js/main.9f50fe61.js",
-    "static/media/planets.jpg": "/SimonSWE/static/media/planets.2573735619a7ee6e77fd.jpg",
-    "static/media/earth.jpg": "/SimonSWE/static/media/earth.9e1799e9e3f6691475b6.jpg",
-    "static/media/satellite.jpg": "/SimonSWE/static/media/satellite.deb2ea6837edbe4de0a3.jpg",
-    "static/media/pfp.jpg": "/SimonSWE/static/media/pfp.806e6578f082bd622a63.jpg",
-    "static/media/gsoft.png": "/SimonSWE/static/media/gsoft.ee4b30ac1f0834b47a6a.png",
-    "static/media/SimonHuang_Resume.pdf": "/SimonSWE/static/media/SimonHuang_Resume.53faff30aff9e3f82b2a.pdf",
-    "static/media/xrp-removebg.png": "/SimonSWE/static/media/xrp-removebg.f37c39835b2a21bebd7a.png",
-    "static/media/monkey.png": "/SimonSWE/static/media/monkey.c0c2d9475d73170a4b1a.png",
-    "static/media/robot.png": "/SimonSWE/static/media/robot.aff1de804c2eb789e25c.png",
-    "static/media/invader.png": "/SimonSWE/static/media/invader.4f442604f376f9e681d6.png",
-    "static/media/auradata.png": "/SimonSWE/static/media/auradata.36be5a4ea473a9f8e3fe.png",
-    "index.html": "/SimonSWE/index.html",
-    "main.ce7d8819.css.map": "/SimonSWE/static/css/main.ce7d8819.css.map",
-    "main.9f50fe61.js.map": "/SimonSWE/static/js/main.9f50fe61.js.map"
+    "main.css": "/simonswe/static/css/main.ce7d8819.css",
+    "main.js": "/simonswe/static/js/main.a94c3c22.js",
+    "static/media/planets.jpg": "/simonswe/static/media/planets.2573735619a7ee6e77fd.jpg",
+    "static/media/earth.jpg": "/simonswe/static/media/earth.9e1799e9e3f6691475b6.jpg",
+    "static/media/satellite.jpg": "/simonswe/static/media/satellite.deb2ea6837edbe4de0a3.jpg",
+    "static/media/pfp.jpg": "/simonswe/static/media/pfp.806e6578f082bd622a63.jpg",
+    "static/media/gsoft.png": "/simonswe/static/media/gsoft.ee4b30ac1f0834b47a6a.png",
+    "static/media/SimonHuang_Resume.pdf": "/simonswe/static/media/SimonHuang_Resume.53faff30aff9e3f82b2a.pdf",
+    "static/media/xrp-removebg.png": "/simonswe/static/media/xrp-removebg.f37c39835b2a21bebd7a.png",
+    "static/media/monkey.png": "/simonswe/static/media/monkey.c0c2d9475d73170a4b1a.png",
+    "static/media/robot.png": "/simonswe/static/media/robot.aff1de804c2eb789e25c.png",
+    "static/media/invader.png": "/simonswe/static/media/invader.4f442604f376f9e681d6.png",
+    "static/media/auradata.png": "/simonswe/static/media/auradata.36be5a4ea473a9f8e3fe.png",
+    "index.html": "/simonswe/index.html",
+    "main.ce7d8819.css.map": "/simonswe/static/css/main.ce7d8819.css.map",
+    "main.a94c3c22.js.map": "/simonswe/static/js/main.a94c3c22.js.map"
   },
   "entrypoints": [
     "static/css/main.ce7d8819.css",
-    "static/js/main.9f50fe61.js"
+    "static/js/main.a94c3c22.js"
   ]
 }
