@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce7d8819.css",
-    "main.js": "/static/js/main.0660b994.js",
-    "static/media/planets.jpg": "/static/media/planets.2573735619a7ee6e77fd.jpg",
-    "static/media/earth.jpg": "/static/media/earth.9e1799e9e3f6691475b6.jpg",
+    "main.css": "/static/css/main.62c94ff3.css",
+    "main.js": "/static/js/main.079f154e.js",
     "static/media/satellite.jpg": "/static/media/satellite.deb2ea6837edbe4de0a3.jpg",
+    "static/media/cartoonspace_noearth.png": "/static/media/cartoonspace_noearth.6351472ea01bde2f4e1d.png",
     "static/media/pfp.jpg": "/static/media/pfp.806e6578f082bd622a63.jpg",
+    "static/media/cartoonspace.png": "/static/media/cartoonspace.8356a92223a5b96a301e.png",
     "static/media/gsoft.png": "/static/media/gsoft.ee4b30ac1f0834b47a6a.png",
     "static/media/SimonHuang_Resume.pdf": "/static/media/SimonHuang_Resume.53faff30aff9e3f82b2a.pdf",
     "static/media/xrp-removebg.png": "/static/media/xrp-removebg.f37c39835b2a21bebd7a.png",
@@ -13,12 +13,13 @@
     "static/media/robot.png": "/static/media/robot.aff1de804c2eb789e25c.png",
     "static/media/invader.png": "/static/media/invader.4f442604f376f9e681d6.png",
     "static/media/auradata.png": "/static/media/auradata.36be5a4ea473a9f8e3fe.png",
+    "static/media/github.svg": "/static/media/github.89854a56ab5376c7894f23a4f04ef07a.svg",
     "index.html": "/index.html",
-    "main.ce7d8819.css.map": "/static/css/main.ce7d8819.css.map",
-    "main.0660b994.js.map": "/static/js/main.0660b994.js.map"
+    "main.62c94ff3.css.map": "/static/css/main.62c94ff3.css.map",
+    "main.079f154e.js.map": "/static/js/main.079f154e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce7d8819.css",
-    "static/js/main.0660b994.js"
+    "static/css/main.62c94ff3.css",
+    "static/js/main.079f154e.js"
   ]
 }
