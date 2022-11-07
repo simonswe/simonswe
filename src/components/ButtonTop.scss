@@ -1,4 +1,4 @@
-.to__top {
+.to-top {
     display: flex;
     position: fixed;
     bottom: 10vh;
@@ -17,7 +17,7 @@
     transition-duration: .5s;
 }
 
-.to__top:hover {
+.to-top:hover {
     background-color: white;
     color: #011F44;
 }

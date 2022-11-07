@@ -1,20 +1,21 @@
-.experience__background {
-    position: relative;
+.experience {
+    background-image: url("../assets/images/cartoonspace.png");
+    background-size: cover;
     height: 100vh;
-}
 
-.experience__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
 
-    h1 {
-        color: white;
-        font-size: 3rem;
+        h1 {
+            color: white;
+            font-size: 3rem;
+        }
     }
 }
 

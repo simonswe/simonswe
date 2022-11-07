@@ -1,11 +1,13 @@
-.satellite__background {
-    position: relative;
+.satellite {
+    background-image: url("../assets/images/satellite.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
-}
 
-.satellite__container {
-    display: flex;
-    justify-content: center;
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .carousel__content {
@@ -142,7 +144,6 @@
     justify-content: center;
     position: absolute;
     height: 80vh;
-    width: 100vw;
     top: -5vh;
 }
 
@@ -156,7 +157,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .carousel__content {
         display: none;
     }

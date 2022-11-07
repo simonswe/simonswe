@@ -1,13 +1,15 @@
-import { Parallax } from 'react-parallax';
+//import { Parallax } from 'react-parallax';
 import TypeWriter from 'typewriter-effect';
 
-import SatelliteImage from '../assets/images/satellite.jpg';
+//import SatelliteImage from '../assets/images/satellite.jpg';
 
 import './Satellite.scss';
 
 const Satellite = () => {
     return (
-        <Parallax className='satellite__background' bgImage={SatelliteImage} strength={500}>
+        <div className='satellite'>
+        {//<Parallax className='satellite__background' bgImage={SatelliteImage} strength={500}></Parallax>
+        }
             <div className='satellite__container'>
                 <div className='carousel__content'>
                     <div className="carousel__content__container">
@@ -39,7 +41,7 @@ const Satellite = () => {
                     </span>
                 </div>
             </div>
-        </Parallax>
+        </div>
     ); 
 }
 
