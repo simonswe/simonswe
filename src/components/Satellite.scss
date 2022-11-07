@@ -6,17 +6,30 @@
 
     &__container {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        height: 80%;
     }
 }
 
+.typewriter__content {
+    position: relative;
+}
+
+.typewriter__content span.img-txt {
+    text-transform: uppercase;
+    color: black;
+    padding: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
 .carousel__content {
-    position: absolute;
-    top: 55vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 160px;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
     
     font-size: 35px;
     line-height: 40px;
@@ -138,31 +151,12 @@
     83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
 
-.typewriter__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    height: 80vh;
-    top: -5vh;
-}
-
-.typewriter__content span.img-txt {
-    text-transform: uppercase;
-    color: black;
-    padding: 1rem;
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 10px;
-    text-align: center;
-}
-
 @media screen and (max-width: 1200px) {
-    .carousel__content {
-        display: none;
-    }
-
     .typewriter__content {
         max-width: 80%;
+    }
+
+    .carousel__content {
+        display: none;
     }
 }
