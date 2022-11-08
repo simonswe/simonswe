@@ -1,9 +1,7 @@
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import { Button, Card, CardMedia, CardContent, CardActions, Tab } from '@mui/material';
-//import { Parallax } from 'react-parallax';
 
-//import BGImage from '../assets/images/earth.jpg';
 import xRPBotImage from '../assets/images/xrp-removebg.png';
 import SimonSWEImage from '../assets/images/robot.png';
 import ImpossibleInvadersImage from '../assets/images/invader.png';
@@ -52,7 +50,7 @@ const Projects = () => {
                             JavaScript | REST APIs | Heroku
                         </CardContent>
                         <CardContent className='project-description'>
-                            ► Programmed JS discord bot that listens to custom commands to perform different tasks such as fetching Ethereum price from an API.
+                            Programmed JS discord bot that listens to custom commands to perform different tasks such as fetching data from an API
                         </CardContent>
                         <CardActions>
                             <Button size="small" color="primary">
@@ -75,7 +73,7 @@ const Projects = () => {
                             React | JavaScript | HTML/CSS
                         </CardContent>
                         <CardContent className='project-description'>
-                            ► Website using React and Material UI
+                            Personal Portfolio Website using React and Material UI
                         </CardContent>
                         <CardActions>
                             <Button size="small" color="primary">
@@ -98,9 +96,7 @@ const Projects = () => {
                             PyGame | Python | OOP
                         </CardContent>
                         <CardContent className='project-description'>
-                            ► Used object-oriented programming in Python to create a game inspired by Space Invaders
-                            <br />
-                            ► Implemented collision detection and increasing game difficulty with Pygame
+                            Used object-oriented programming in Python to create a game inspired by Space Invaders
                         </CardContent>
                         <CardActions>
                             <Button size="small" color="primary">
@@ -123,11 +119,7 @@ const Projects = () => {
                             Python | gTTS | Speech Recognition
                         </CardContent>
                         <CardContent className='project-description'>
-                            ► Integrated PyPI libraries in Python to program a bot that assists with simple tasks, such as capturing images, applying a filter to the images, then posting them onto Discord or Twitter via a bot using their APIs.
-                        <br />
-                            ► Implemented unique voice commands with a Speech Recognition API that trigger various bot functions
-                        <br />
-                            ► Established randomized dialogue with gTTS’s API to converse with the user
+                            Programmed a Python bot that assists with various tasks, such as capturing and manipulating images, then posting them onto Discord/Twitter using their APIs
                         </CardContent>
                         <CardActions>
                             <Button size="small" color="primary">
