@@ -1,7 +1,6 @@
 import * as React from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import { Card, CardMedia, CardContent } from '@mui/material';
+import Tabs from '@mui/material/Tabs';
+import { Card, CardMedia, CardContent, Tab } from '@mui/material';
 //import { Parallax } from 'react-parallax';
 
 //import BGImage from '../assets/images/planets.jpg';
@@ -24,19 +23,20 @@ const Experience = () => {
         <div className='experience'>
             <div className='experience__container'>
                 <h1>Experience</h1>
-                <Card variant='outlined' className='button-group'>
-                    <ToggleButtonGroup
-                        color="info"
-                        value={experience}
-                        exclusive
-                        onChange={handleChange}
-                        aria-label="Platform"
-                        >
-                            <ToggleButton value="gsoft">GSoft</ToggleButton>
-                            <ToggleButton value="auradata">AuraData</ToggleButton>
-                            <ToggleButton value="phsa">PHSA</ToggleButton>
-                    </ToggleButtonGroup>
-                </Card>
+                <Tabs
+                    className="tab-group"
+                    variant="scrollable"
+                    selectionFollowsFocus
+                    allowScrollButtonsMobile
+                    value={experience}
+                    onChange={handleChange}
+                    aria-label="experience"
+                    textColor="black"
+                    >
+                        <Tab value="gsoft" label="GSoft"/>
+                        <Tab value="auradata" label="AuraData" />
+                        <Tab value="phsa" label="PHSA"/>
+                </Tabs>
                 {
                     experience === 'gsoft'
                     &&

@@ -1,7 +1,6 @@
 import * as React from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import { Card, CardMedia, CardContent } from '@mui/material';
+import Tabs from '@mui/material/Tabs';
+import { Button, Card, CardMedia, CardContent, CardActions, Tab } from '@mui/material';
 //import { Parallax } from 'react-parallax';
 
 //import BGImage from '../assets/images/earth.jpg';
@@ -26,27 +25,25 @@ const Projects = () => {
         <div className='projects'>
             <div className='projects__container'>
                 <h1>Projects</h1>
-                <Card variant='outlined' className='button-group'>
-                    <ToggleButtonGroup
-                        color="info"
-                        value={project}
-                        exclusive
-                        onChange={handleChange}
-                        aria-label="Platform"
-                        >
-                            <ToggleButton value="xroyalbot">xRoyalBot</ToggleButton>
-                            <ToggleButton value="simonswe">SimonSWE</ToggleButton>
-                            <ToggleButton value="ii">Impossible Invaders</ToggleButton>
-                            <ToggleButton value="monke">Monke Assistant</ToggleButton>
-                    </ToggleButtonGroup>
-                </Card>
+                <Tabs
+                    className="tab-group"
+                    variant="scrollable"
+                    selectionFollowsFocus
+                    allowScrollButtonsMobile
+                    value={project}
+                    onChange={handleChange}
+                    aria-label="project"
+                    textColor="black"
+                    >
+                        <Tab value="xroyalbot" label="xRoyalBot"/>
+                        <Tab value="simonswe" label="SimonSWE" />
+                        <Tab value="ii" label="Impossible Invaders"/>
+                        <Tab value="monke" label="Monke Assistant"/>
+                </Tabs>
                 {
                     project === 'xroyalbot'
                     &&
                     <Card variant='outlined' className='card'>
-                        <a className='card-link-button' href='https://github.com/xroyalphantom/xRoyalBot' target='_blank' rel='noreferrer'>
-                            <img src={GitHub} alt="GitHub Link" />
-                        </a>
                         <CardMedia className='card-media' component="img" image={xRPBotImage} alt="xRPBot" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project-name'>
                             xRoyalBot
@@ -57,15 +54,19 @@ const Projects = () => {
                         <CardContent className='project-description'>
                             ► Programmed JS discord bot that listens to custom commands to perform different tasks such as fetching Ethereum price from an API.
                         </CardContent>
+                        <CardActions>
+                            <Button size="small" color="primary">
+                                <a className='card-link-button' href='https://github.com/xroyalphantom/xRoyalBot' target='_blank' rel='noreferrer'>
+                                    <img src={GitHub} alt="GitHub Link" />
+                                </a>
+                            </Button>
+                        </CardActions>
                     </Card>
                 }
                 {
                     project === 'simonswe'
                     &&
                     <Card variant='outlined' className='card'>
-                        <a className='card-link-button' href='https://github.com/xroyalphantom/SimonSWE' target='_blank' rel='noreferrer'>
-                            <img src={GitHub} alt="GitHub Link" />
-                        </a>
                         <CardMedia className='card-media' component="img" image={SimonSWEImage} alt="SimonSWE" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project-name'>
                             SimonSWE
@@ -76,15 +77,19 @@ const Projects = () => {
                         <CardContent className='project-description'>
                             ► Website using React and Material UI
                         </CardContent>
+                        <CardActions>
+                            <Button size="small" color="primary">
+                                <a className='card-link-button' href='https://github.com/xroyalphantom/SimonSWE' target='_blank' rel='noreferrer'>
+                                    <img src={GitHub} alt="GitHub Link" />
+                                </a>
+                            </Button>
+                        </CardActions>
                     </Card>
                 }
                 {
                     project === 'ii'
                     &&
                     <Card variant='outlined' className='card'>
-                        <a className='card-link-button' href='https://github.com/xroyalphantom/Impossible-Invaders' target='_blank' rel='noreferrer'>
-                            <img src={GitHub} alt="GitHub Link" />
-                        </a>
                         <CardMedia className='card-media' component="img" image={ImpossibleInvadersImage} alt="ImpossibleInvaders" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project-name'>
                             Impossible Invaders
@@ -97,15 +102,19 @@ const Projects = () => {
                             <br />
                             ► Implemented collision detection and increasing game difficulty with Pygame
                         </CardContent>
+                        <CardActions>
+                            <Button size="small" color="primary">
+                                <a className='card-link-button' href='https://github.com/xroyalphantom/Impossible-Invaders' target='_blank' rel='noreferrer'>
+                                    <img src={GitHub} alt="GitHub Link" />
+                                </a>
+                            </Button>
+                        </CardActions>
                     </Card>
                 }
                 {
                     project === 'monke'
                     &&
                     <Card variant='outlined' className='card'>
-                        <a className='card-link-button' href='https://github.com/charliecao02/Monkey-Assistant' target='_blank' rel='noreferrer'>
-                            <img src={GitHub} alt="GitHub Link" />
-                        </a>
                         <CardMedia className='card-media' component="img" image={MonkeyImage} alt="Monkey" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project-name'>
                             MONKE Assistant
@@ -120,6 +129,13 @@ const Projects = () => {
                         <br />
                             ► Established randomized dialogue with gTTS’s API to converse with the user
                         </CardContent>
+                        <CardActions>
+                            <Button size="small" color="primary">
+                                <a className='card-link-button' href='https://github.com/charliecao02/Monkey-Assistant' target='_blank' rel='noreferrer'>
+                                    <img src={GitHub} alt="GitHub Link" />
+                                </a>
+                            </Button>
+                        </CardActions>
                     </Card>
                 }
             </div>
