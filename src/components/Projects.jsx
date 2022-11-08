@@ -36,7 +36,7 @@ const Projects = () => {
                         <Tab value="xroyalbot" label="xRoyalBot"/>
                         <Tab value="simonswe" label="SimonSWE" />
                         <Tab value="ii" label="Impossible Invaders"/>
-                        <Tab value="monke" label="Monke Assistant"/>
+                        <Tab value="monke" label="MONKE Assistant"/>
                 </Tabs>
                 {
                     project === 'xroyalbot'
@@ -47,7 +47,7 @@ const Projects = () => {
                             xRoyalBot
                         </CardContent>
                         <CardContent className='project-skills'>
-                            JavaScript | REST APIs | Heroku
+                            JavaScript | APIs
                         </CardContent>
                         <CardContent className='project-description'>
                             Programmed JS discord bot that listens to custom commands to perform different tasks such as fetching data from an API
@@ -93,7 +93,7 @@ const Projects = () => {
                             Impossible Invaders
                         </CardContent>
                         <CardContent className='project-skills'>
-                            PyGame | Python | OOP
+                            Python | OOP
                         </CardContent>
                         <CardContent className='project-description'>
                             Used object-oriented programming in Python to create a game inspired by Space Invaders
@@ -113,10 +113,10 @@ const Projects = () => {
                     <Card variant='outlined' className='card'>
                         <CardMedia className='card-media' component="img" image={MonkeyImage} alt="Monkey" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project-name'>
-                            MONKE Assistant
+                            MONKE
                         </CardContent>
                         <CardContent className='project-skills'>
-                            Python | gTTS | Speech Recognition
+                            Python | APIs
                         </CardContent>
                         <CardContent className='project-description'>
                             Programmed a Python bot that assists with various tasks, such as capturing and manipulating images, then posting them onto Discord/Twitter using their APIs

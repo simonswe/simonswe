@@ -22,10 +22,11 @@
 .tab-group {
     margin: 3rem;
     background-color: white;
-    max-width: 80%;
+    max-width: 60vw;
 }
 
 .card {
+    position: relative;
     width: 50vw;
     height: 50vh;
     display: flex;
