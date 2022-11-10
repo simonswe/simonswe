@@ -1,7 +1,8 @@
+@import '../Constants';
+
 .satellite {
     background-image: url("../assets/images/satellite.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
 
     &__container {
@@ -13,21 +14,21 @@
     }
 }
 
-.typewriter__content {
+.typewriter {
     position: relative;
+
+    span {
+        text-transform: uppercase;
+        color: black;
+        padding: $size-s;
+        font-size: $size-xxl;
+        font-weight: bold;
+        letter-spacing: $size-xs;
+        text-align: center;
+    }
 }
 
-.typewriter__content span.img-txt {
-    text-transform: uppercase;
-    color: black;
-    padding: 1rem;
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: .4rem;
-    text-align: center;
-}
-
-.carousel__content {
+.carousel {
     position: relative;
     overflow: hidden;
     
@@ -151,12 +152,12 @@
     83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
 
-@media screen and (max-width: 1200px) {
-    .typewriter__content {
+@media screen and (max-width: $screen-lg) {
+    .typewriter {
         max-width: 90%;
     }
 
-    .carousel__content {
+    .carousel {
         display: none;
     }
 }

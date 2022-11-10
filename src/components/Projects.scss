@@ -1,3 +1,5 @@
+@import '../Constants';
+
 .projects {
     background-image: url("../assets/images/cartoonspace_noearth.png");
     background-size: cover;
@@ -15,15 +17,15 @@
 
         h1 {
             color: white;
-            font-size: 3rem;
+            font-size: $size-xl;
         }
     }
-}
 
-.tab-group {
-    margin: 3rem;
-    background-color: white;
-    max-width: 60vw;
+    &__tabs {
+        margin: $size-xl;
+        background-color: white;
+        max-width: 60vw;
+    }
 }
 
 .card {
@@ -34,28 +36,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__media {
+        height: auto; 
+        width: auto;
+        max-width: 20vh; 
+        max-height: 20vw;
+        padding: $size-xs;
+    }
+
+    &__link-button {
+        cursor: pointer;
+    }
 }
 
-.card-link-button {
-    cursor: pointer;
-}
+.project {
+    &__name {
+        font-size: $size-l;
+    }
 
-.card-media {
-    height: auto; 
-    width: auto;
-    max-width: 20vh; 
-    max-height: 20vw;
-    padding: 0.5rem;
-}
+    &__skills {
+        font-size: $size-m;
+    }
 
-.project-name {
-    font-size: 2rem;
-}
-
-.project-skills {
-    font-size: 1.5rem;
-}
-
-.project-description {
-    font-size: 1rem;
+    &__description {
+        font-size: $size-s;
+    }
 }

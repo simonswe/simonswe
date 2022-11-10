@@ -1,6 +1,7 @@
+@import 'Constants';
+
 html, body {
-  height: 100%;
   margin: 0;
-  background-color: #011F44;
-  font-family: 'Source Sans Pro';
+  background-color: $primary-color;
+  font-family: $font-stack;
 }

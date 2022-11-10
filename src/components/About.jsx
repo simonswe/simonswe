@@ -1,27 +1,26 @@
 import React from 'react';
 
-import Resume from '../assets/files/SimonHuang_Resume.pdf';
-import ProfilePic from '../assets/images/pfp.jpg';
+import {ReactComponent as SvgCurveTop} from '@images/curve_top.svg';
+import Resume from '@files/SimonHuang_Resume.pdf';
+import ProfilePic from '@images/pfp.jpg';
 
 import './About.scss';
 
 const About = () => {
     return (
         <div className="about">
-            <svg name='about' className="svg_curve_top" xmlns="http://www.w3.org/2000/svg" fill="#011F44" viewBox="0 0 100 100" preserveAspectRatio="none" >
-                <path d="M0,100 C20,-80 26,90 100,100" />
-            </svg>
-            <div className="main_container">
-                <div className="left">
-                    <img src={ProfilePic} alt="" className="image" />
+            <SvgCurveTop />
+            <div className="about__container">
+                <div className="about__left">
+                    <img src={ProfilePic} alt="Simon"/>
                 </div>
-                <div className="right">
-                    <p className="aboutme">
+                <div className="about__right">
+                    <p className="about__text">
                         Software Engineering Student @ University of Waterloo
                     </p> 
-                    <a href="https://github.com/xroyalphantom" className="button" target="_blank" rel="noreferrer">GitHub</a>
-                    <a href="https://linkedin.com/in/simon-d-huang" className="button" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <a href={Resume} className="button" target="_blank" rel="noreferrer">Resume</a>
+                    <a href="https://github.com/xroyalphantom" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/simon-d-huang" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href={Resume} target="_blank" rel="noreferrer">Resume</a>
                 </div>
             </div>
         </div>

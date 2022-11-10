@@ -1,3 +1,5 @@
+@import '../Constants';
+
 .experience {
     background-image: url("../assets/images/cartoonspace.png");
     background-size: cover;
@@ -14,15 +16,15 @@
 
         h1 {
             color: white;
-            font-size: 3rem;
+            font-size: $size-xl;
         }
     }
-}
 
-.tab-group {
-    margin: 3rem;
-    background-color: white;
-    max-width: 60vw;
+    &__tabs {
+        margin: $size-xl;
+        background-color: white;
+        max-width: 60vw;
+    }
 }
 
 .card {
@@ -33,20 +35,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__media {
+        height: auto; 
+        width: auto;
+        max-width: 20vh; 
+        max-height: 20vw;
+        padding: $size-xs;
+    }
 }
 
-.card-media {
-    height: auto; 
-    width: auto;
-    max-width: 20vh; 
-    max-height: 20vw;
-    padding: 0.5rem;
-}
+.job {
+    &__title {
+        font-size: $size-l;
+    }
 
-.job-title {
-    font-size: 2rem;
-}
-
-.job-description {
-    font-size: 1rem;
+    &__description {
+        font-size: $size-s;
+    }
 }
