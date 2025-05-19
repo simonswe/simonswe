@@ -1,3 +1,3 @@
 # SimonSWE
 
-Simon Huang's personal portfolio made with React.
+Outdated Personal Portfolio made with React
