@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b52c8b2.css",
-    "main.js": "/static/js/main.ba7a1510.js",
+    "main.css": "/static/css/main.257dea59.css",
+    "main.js": "/static/js/main.a71c8896.js",
     "static/media/satellite.jpg": "/static/media/satellite.deb2ea6837edbe4de0a3.jpg",
+    "static/media/pfp.jpg": "/static/media/pfp.804799b39e13e9c38929.jpg",
     "static/media/cartoonspace_noearth.png": "/static/media/cartoonspace_noearth.6351472ea01bde2f4e1d.png",
-    "static/media/pfp.jpg": "/static/media/pfp.806e6578f082bd622a63.jpg",
+    "static/media/SimonHuang_Resume.pdf": "/static/media/SimonHuang_Resume.f639ecbc6f59f8d395fe.pdf",
     "static/media/cartoonspace.png": "/static/media/cartoonspace.8356a92223a5b96a301e.png",
-    "static/media/gsoft.png": "/static/media/gsoft.ee4b30ac1f0834b47a6a.png",
-    "static/media/SimonHuang_Resume.pdf": "/static/media/SimonHuang_Resume.53faff30aff9e3f82b2a.pdf",
+    "static/media/IMC.png": "/static/media/IMC.2774452fb52744249b0f.png",
     "static/media/xrp-removebg.png": "/static/media/xrp-removebg.f37c39835b2a21bebd7a.png",
     "static/media/monkey.png": "/static/media/monkey.c0c2d9475d73170a4b1a.png",
     "static/media/robot.png": "/static/media/robot.aff1de804c2eb789e25c.png",
@@ -16,11 +16,11 @@
     "static/media/github.svg": "/static/media/github.89854a56ab5376c7894f23a4f04ef07a.svg",
     "index.html": "/index.html",
     "static/media/curve_top.svg": "/static/media/curve_top.78be57bfe76e92bdf31f6911fa37ade9.svg",
-    "main.3b52c8b2.css.map": "/static/css/main.3b52c8b2.css.map",
-    "main.ba7a1510.js.map": "/static/js/main.ba7a1510.js.map"
+    "main.257dea59.css.map": "/static/css/main.257dea59.css.map",
+    "main.a71c8896.js.map": "/static/js/main.a71c8896.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b52c8b2.css",
-    "static/js/main.ba7a1510.js"
+    "static/css/main.257dea59.css",
+    "static/js/main.a71c8896.js"
   ]
 }
