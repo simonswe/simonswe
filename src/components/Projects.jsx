@@ -12,7 +12,7 @@ import GitHub from '@images/github.svg';
 import './Projects.scss';
 
 const Projects = () => {
-    const [project, setProject] = React.useState('xroyalbot');
+    const [project, setProject] = React.useState('imcprosperity');
 
     const handleChange = (event, newProject) => {
         if (newProject !== null) {
