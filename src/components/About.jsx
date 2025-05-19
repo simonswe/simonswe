@@ -16,9 +16,9 @@ const About = () => {
                 </div>
                 <div className="about__right">
                     <p className="about__text">
-                        Software Engineering Student @ University of Waterloo
+                        Software Engineering @ UWaterloo
                     </p> 
-                    <a href="https://github.com/xroyalphantom" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://github.com/simonswe" target="_blank" rel="noreferrer">GitHub</a>
                     <a href="https://linkedin.com/in/simon-d-huang" target="_blank" rel="noreferrer">LinkedIn</a>
                     <a href={Resume} target="_blank" rel="noreferrer">Resume</a>
                 </div>

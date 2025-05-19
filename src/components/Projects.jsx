@@ -2,10 +2,11 @@ import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import { Button, Card, CardMedia, CardContent, CardActions, Tab } from '@mui/material';
 
-import xRPBotImage from '@images/xrp-removebg.png';
-import SimonSWEImage from '@images/robot.png';
-import ImpossibleInvadersImage from '@images/invader.png';
-import MonkeyImage from '@images/monkey.png';
+import IMC from '@images/IMC.png'
+import xRPBot from '@images/xrp-removebg.png';
+import SimonSWE from '@images/robot.png';
+import ImpossibleInvaders from '@images/invader.png';
+import Monkey from '@images/monkey.png';
 import GitHub from '@images/github.svg';
 
 import './Projects.scss';
@@ -33,16 +34,40 @@ const Projects = () => {
                     selectionFollowsFocus
                     allowScrollButtonsMobile
                     >
+                        <Tab value="imcprosperity" label="IMC Prosperity"/>
                         <Tab value="xroyalbot" label="xRoyalBot"/>
                         <Tab value="simonswe" label="SimonSWE" />
                         <Tab value="ii" label="Impossible Invaders"/>
                         <Tab value="monke" label="MONKE Assistant"/>
                 </Tabs>
                 {
+                    project === 'imcprosperity'
+                    &&
+                    <Card variant='outlined' className='card'>
+                        <CardMedia className='card__media' component="img" image={IMC} alt="IMC Prosperity" sx={{display:{xs:'none', lg:'block'}}}/>
+                        <CardContent className='project__name'>
+                            IMC Prosperity Competition
+                        </CardContent>
+                        <CardContent className='project__skills'>
+                            Python | Pandas | NumPy | QuantLib | FinTech
+                        </CardContent>
+                        <CardContent className='project__description'>
+                            Top 2% Global Placement in IMC's International Quantitative Trading Competition
+                        </CardContent>
+                        <CardActions>
+                            <Button size="small" color="primary">
+                                <a className='card__link-button' href='https://github.com/simonswe/prosperity2_traderbots' target='_blank' rel='noreferrer'>
+                                    <img src={GitHub} alt="GitHub Link" />
+                                </a>
+                            </Button>
+                        </CardActions>
+                    </Card>
+                }
+                {
                     project === 'xroyalbot'
                     &&
                     <Card variant='outlined' className='card'>
-                        <CardMedia className='card__media' component="img" image={xRPBotImage} alt="xRPBot" sx={{display:{xs:'none', lg:'block'}}}/>
+                        <CardMedia className='card__media' component="img" image={xRPBot} alt="xRPBot" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project__name'>
                             xRoyalBot
                         </CardContent>
@@ -54,7 +79,7 @@ const Projects = () => {
                         </CardContent>
                         <CardActions>
                             <Button size="small" color="primary">
-                                <a className='card__link-button' href='https://github.com/xroyalphantom/xRoyalBot' target='_blank' rel='noreferrer'>
+                                <a className='card__link-button' href='https://github.com/simonswe/xRoyalBot' target='_blank' rel='noreferrer'>
                                     <img src={GitHub} alt="GitHub Link" />
                                 </a>
                             </Button>
@@ -65,7 +90,7 @@ const Projects = () => {
                     project === 'simonswe'
                     &&
                     <Card variant='outlined' className='card'>
-                        <CardMedia className='card__media' component="img" image={SimonSWEImage} alt="SimonSWE" sx={{display:{xs:'none', lg:'block'}}}/>
+                        <CardMedia className='card__media' component="img" image={SimonSWE} alt="SimonSWE" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project__name'>
                             SimonSWE
                         </CardContent>
@@ -77,7 +102,7 @@ const Projects = () => {
                         </CardContent>
                         <CardActions>
                             <Button size="small" color="primary">
-                                <a className='card__link-button' href='https://github.com/xroyalphantom/SimonSWE' target='_blank' rel='noreferrer'>
+                                <a className='card__link-button' href='https://github.com/simonswe/SimonSWE' target='_blank' rel='noreferrer'>
                                     <img src={GitHub} alt="GitHub Link" />
                                 </a>
                             </Button>
@@ -88,7 +113,7 @@ const Projects = () => {
                     project === 'ii'
                     &&
                     <Card variant='outlined' className='card'>
-                        <CardMedia className='card__media' component="img" image={ImpossibleInvadersImage} alt="ImpossibleInvaders" sx={{display:{xs:'none', lg:'block'}}}/>
+                        <CardMedia className='card__media' component="img" image={ImpossibleInvaders} alt="ImpossibleInvaders" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project__name'>
                             Impossible Invaders
                         </CardContent>
@@ -100,7 +125,7 @@ const Projects = () => {
                         </CardContent>
                         <CardActions>
                             <Button size="small" color="primary">
-                                <a className='card__link-button' href='https://github.com/xroyalphantom/Impossible-Invaders' target='_blank' rel='noreferrer'>
+                                <a className='card__link-button' href='https://github.com/simonswe/Impossible-Invaders' target='_blank' rel='noreferrer'>
                                     <img src={GitHub} alt="GitHub Link" />
                                 </a>
                             </Button>
@@ -111,7 +136,7 @@ const Projects = () => {
                     project === 'monke'
                     &&
                     <Card variant='outlined' className='card'>
-                        <CardMedia className='card__media' component="img" image={MonkeyImage} alt="Monkey" sx={{display:{xs:'none', lg:'block'}}}/>
+                        <CardMedia className='card__media' component="img" image={Monkey} alt="Monkey" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='project__name'>
                             MONKE
                         </CardContent>

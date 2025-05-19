@@ -1,3 +1,3 @@
 # SimonSWE
 
-Outdated Personal Portfolio made with React
+Personal Portfolio made with React

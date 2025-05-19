@@ -2,14 +2,15 @@ import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import { Card, CardMedia, CardContent, Tab } from '@mui/material';
 
-import GSoft from '@images/gsoft.png';
+import Scrawlr from '@images/scrawlr.jpg';
+import Workleap from '@images/workleap.jpg';
 import AuraData from '@images/auradata.png';
 import PHSA from '@images/phsa.png';
 
 import './Experience.scss';
 
 const Experience = () => {
-    const [experience, setExperience] = React.useState('gsoft');
+    const [experience, setExperience] = React.useState('scrawlr');
 
     const handleChange = (event, newExperience) => {
         if (newExperience !== null) {
@@ -31,17 +32,31 @@ const Experience = () => {
                     selectionFollowsFocus
                     allowScrollButtonsMobile
                     >
-                        <Tab value="gsoft" label="GSoft"/>
+                        <Tab value="scrawlr" label="Scrawlr"/>
+                        <Tab value="workleap" label="WorkLeap"/>
                         <Tab value="auradata" label="AuraData" />
                         <Tab value="phsa" label="PHSA"/>
                 </Tabs>
                 {
-                    experience === 'gsoft'
+                    experience === 'scrawlr'
                     &&
                     <Card variant='outlined' className='card'>
-                        <CardMedia className='card__media' component="img" image={GSoft} alt="GSoft" sx={{display:{xs:'none', lg:'block'}}}/>
+                        <CardMedia className='card__media' component="img" image={Scrawlr} alt="Scrawlr" sx={{display:{xs:'none', lg:'block'}}}/>
                         <CardContent className='job__title'>
-                            Full-Stack Engineer @ GSoft
+                            Backend Developer @ Scrawlr
+                        </CardContent>
+                        <CardContent className='job__description'>
+                            Constructed Health Page
+                        </CardContent>
+                    </Card>
+                }
+                {
+                    experience === 'workleap'
+                    &&
+                    <Card variant='outlined' className='card'>
+                        <CardMedia className='card__media' component="img" image={Workleap} alt="Workleap" sx={{display:{xs:'none', lg:'block'}}}/>
+                        <CardContent className='job__title'>
+                            Full-Stack Engineer @ Workleap
                         </CardContent>
                         <CardContent className='job__description'>
                             Streamlined processes in the development of Officevibe
